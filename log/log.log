@@ -1,0 +1,344 @@
+
+{"level":"info","message":"Database 1 Connected","timestamp":"2023-08-14 12:12:04"}
+{"level":"error","message":"Key: 'CreateSettingMcuInput.CtrlName' Error:Field validation for 'CtrlName' failed on the 'required' tag","timestamp":"2023-08-14 12:12:16"}
+{"level":"info","message":"Unauthorized","timestamp":"2023-08-14 12:12:33"}
+{"file":"main.go","level":"info","message":"This is a log entry with a file path","timestamp":"2023-08-14 12:16:00"}
+{"level":"info","message":"Database 1 Connected","timestamp":"2023-08-14 12:16:00"}
+{"level":"info","message":"Unauthorized","timestamp":"2023-08-14 12:16:10"}
+{"level":"info","message":"Success to create setting mcu","timestamp":"2023-08-14 12:16:19"}
+{"level":"info","message":"Database 1 Connected","timestamp":"12:22:50 14-08-2023"}
+{"level":"info","message":"Success to create setting mcu","timestamp":"12:22:58 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"12:23:24 14-08-2023"}
+{"level":"info","message":"Success to create setting mcu","timestamp":"12:23:26 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:29:16 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:35:37 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:38:17 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:44:25 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:45:12 14-08-2023"}
+{"level":"info","message":"{{Success to get detail setting mcu 200 success} {12345 3000 Pintu Masuk}}","timestamp":"14:45:15 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:46:43 14-08-2023"}
+{"level":"info","message":"Success to get detail setting mcu","timestamp":"14:46:47 14-08-2023"}
+{"level":"info","message":"Success to get detail setting mcu","timestamp":"14:47:33 14-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"14:47:39 14-08-2023"}
+{"level":"info","message":"Success to get detail setting mcu","timestamp":"14:47:40 14-08-2023"}
+{"level":"info","message":"Success to get detail setting mcu","timestamp":"14:47:53 14-08-2023"}
+{"level":"panic","message":"dial tcp 127.0.0.1:3306: connect: connection refused","timestamp":"23:51:53 15-08-2023"}
+{"level":"panic","message":"dial tcp 127.0.0.1:3306: connect: connection refused","timestamp":"23:54:14 15-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"23:55:45 15-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"23:57:26 15-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"23:59:21 15-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:00:41 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:01:18 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:31:00 16-08-2023"}
+{"level":"panic","message":"no active connection found: no Elasticsearch node available","timestamp":"00:31:00 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:31:45 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:32:03 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:35:45 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:35:52 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:42:56 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:42:56 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:43:15 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:43:15 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:43:51 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:43:51 16-08-2023"}
+{"level":"error","message":"Error sending log to Elasticsearch: unsupported protocol scheme \"localhost\"","timestamp":"00:43:51 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:43:59 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:43:59 16-08-2023"}
+{"level":"error","message":"Error sending log to Elasticsearch: unsupported protocol scheme \"localhost\"","timestamp":"00:43:59 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:48:13 16-08-2023"}
+{"level":"error","message":"Error getting response: unsupported protocol scheme \"localhost\"","timestamp":"00:48:13 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:48:20 16-08-2023"}
+{"level":"error","message":"Error getting response: unsupported protocol scheme \"localhost\"","timestamp":"00:48:20 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:48:59 16-08-2023"}
+{"level":"error","message":"Error getting response: unsupported protocol scheme \"localhost\"","timestamp":"00:48:59 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:50:02 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:51:36 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:52:04 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"00:58:17 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"00:58:34 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:00:59 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"01:01:13 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:05:49 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"01:06:49 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:17:15 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"01:17:31 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:19:11 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:26:01 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:36:11 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"01:36:20 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:37:29 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:40:58 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:46:42 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:47:03 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:48:22 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:52:59 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"01:56:49 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"02:02:00 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"02:02:17 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"02:04:25 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"02:11:08 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"02:11:10 16-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"02:12:02 16-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"02:14:18 16-08-2023"}
+{"level":"panic","message":"dial tcp 127.0.0.1:3306: connect: connection refused","timestamp":"11:35:40 17-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"15:56:21 26-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"15:56:47 26-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"18:21:30 26-08-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"18:21:30 26-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"20:01:17 29-08-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"20:01:18 29-08-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"20:03:22 29-08-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:13:59 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:13:59 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:14:22 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:28:55 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:28:55 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:29:53 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:29:53 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:31:11 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:31:11 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:32:04 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:32:04 05-09-2023"}
+{"level":"error","message":"[Key: 'CreateSettingMcuInput.Pwd' Error:Field validation for 'Pwd' failed on the 'required' tag Key: 'CreateSettingMcuInput.DelayDoor' Error:Field validation for 'DelayDoor' failed on the 'required' tag Key: 'CreateSettingMcuInput.CtrlName' Error:Field validation for 'CtrlName' failed on the 'required' tag]","timestamp":"19:33:08 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:34:56 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:34:56 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:35:01 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:43:31 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:43:31 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:43:34 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:43:48 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:43:54 05-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"19:44:24 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:44:29 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:45:15 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:45:15 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:45:18 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:46:00 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:46:00 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:46:02 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:51:13 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:51:13 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:51:58 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"19:53:31 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"19:53:31 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"19:54:51 05-09-2023"}
+{"level":"info","message":"Database 1 Connected","timestamp":"20:05:37 05-09-2023"}
+{"level":"info","message":"Elastic 1 Connected","timestamp":"20:05:37 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"20:05:41 05-09-2023"}
+{"level":"panic","message":"Error 1049 (42000): Unknown database 'gatewatch'","timestamp":"22:36:50 05-09-2023"}
+{"level":"panic","message":"Error 1049 (42000): Unknown database 'gatewatch'","timestamp":"22:39:08 05-09-2023"}
+{"level":"panic","message":"Error 1049 (42000): Unknown database 'gatewatch'","timestamp":"22:41:00 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:43:31 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:44:53 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:44:59 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"22:45:07 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"22:45:10 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:46:54 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"22:47:19 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"22:47:51 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:50:21 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"22:50:24 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:52:36 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"22:53:29 05-09-2023"}
+{"level":"info","message":"Database Gatewatch Connected","timestamp":"22:54:36 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:14:11 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:14:14 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:14:18 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:14:22 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:16:36 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:16:39 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:21:13 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:24:09 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:24:18 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:24:26 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:24:49 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:32:33 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:32:35 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:35:14 05-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"23:35:16 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"23:35:20 05-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"11:43:49 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"11:44:26 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:44:31 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"11:44:42 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"11:51:57 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:51:59 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:53:01 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:53:18 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"11:53:34 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:55:57 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:57:43 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"11:58:14 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:00:05 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:00:43 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:01:05 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:01:19 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:01:25 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:02:05 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:02:09 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:09:51 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:10:53 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:10:58 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:11:12 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:11:16 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:12:09 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:13:26 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:28:59 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:33:10 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:33:22 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:41:32 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:41:57 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:42:19 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"12:43:55 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:44:02 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:44:13 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"12:46:07 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:46:10 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"12:46:22 06-09-2023"}
+{"level":"error","message":"[Setting mcu tidak ditemukan]","timestamp":"12:47:56 06-09-2023"}
+{"level":"error","message":"Setting mcu tidak ditemukan","timestamp":"12:48:25 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"13:32:22 06-09-2023"}
+{"level":"error","message":"Setting mcu tidak ditemukan","timestamp":"13:32:28 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"13:32:38 06-09-2023"}
+{"level":"error","message":"Setting mcu tidak ditemukan","timestamp":"13:32:52 06-09-2023"}
+{"level":"error","message":"Setting mcu tidak ditemukan","timestamp":"13:33:24 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"13:33:27 06-09-2023"}
+{"level":"error","message":"[Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag]","timestamp":"13:33:30 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"13:33:35 06-09-2023"}
+{"level":"error","message":"Key: 'FindByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag","timestamp":"13:34:51 06-09-2023"}
+{"level":"info","message":"Success to find detail setting mcu by token","timestamp":"13:35:16 06-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"13:36:07 06-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"13:36:17 06-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"15:58:50 06-09-2023"}
+{"level":"error","message":"Key: 'GetByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag","timestamp":"15:59:09 06-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"15:59:20 06-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"15:59:24 06-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"16:03:57 06-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"09:04:59 07-09-2023"}
+{"level":"error","message":"Key: 'GetByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag","timestamp":"09:05:02 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"09:05:06 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"09:05:14 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"09:05:45 07-09-2023"}
+{"level":"error","message":"Key: 'GetByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag","timestamp":"09:05:49 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"09:12:01 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"09:28:35 07-09-2023"}
+{"level":"error","message":"Key: 'GetByTokenInput.Token' Error:Field validation for 'Token' failed on the 'required' tag","timestamp":"09:36:47 07-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"09:36:52 07-09-2023"}
+{"level":"error","message":"Setting mcu tidak ditemukan","timestamp":"09:36:56 07-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"09:37:03 07-09-2023"}
+{"level":"panic","message":"dial tcp 127.0.0.1:3306: connect: connection refused","timestamp":"09:39:12 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:40:07 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:40:46 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:43:12 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:45:06 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:45:59 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:46:14 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:47:59 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:48:56 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:51:18 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:55:57 07-09-2023"}
+{"level":"info","message":"Unauthorized","timestamp":"10:57:57 07-09-2023"}
+{"level":"info","message":"AuthAttempt from ip address: 127.0.0.1 at 2023-09-07 10:59:50.744402217 +0700 WIB m=+20.894919440","timestamp":"10:59:50 07-09-2023"}
+{"level":"error","message":"Error 1054 (42S22): Unknown column 'status_kerja' in 'where clause'","timestamp":"11:08:14 07-09-2023"}
+{"level":"error","message":"Error 1054 (42S22): Unknown column 'status_kerja' in 'where clause'","timestamp":"11:08:44 07-09-2023"}
+{"level":"error","message":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%username_card% LIKE ? OR %jabatan% LIKE ? OR %tb_entry_id% LIKE ? OR %id% LIKE ' at line 1","timestamp":"11:16:53 07-09-2023"}
+{"level":"error","message":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%nama_lengkap% LIKE ? OR %updated_at% LIKE ? OR %tb_entry_id% LIKE ? OR %status_' at line 1","timestamp":"11:17:00 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1 at 2023-09-07 11:27:47.821683028 +0700 WIB m=+9.778790794","timestamp":"11:27:47 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"11:28:39 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"11:32:12 07-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"11:33:17 07-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan","timestamp":"11:36:04 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"11:36:11 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"11:37:52 07-09-2023"}
+{"level":"info","message":"AuthAttemptFail from ip address: 127.0.0.1","timestamp":"11:41:06 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"12:30:35 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"13:00:49 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"13:06:14 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"13:08:44 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"13:11:07 07-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"13:15:27 07-09-2023"}
+{"level":"info","message":"AuthAttemptFail from ip address: 127.0.0.1","timestamp":"21:51:30 07-09-2023"}
+{"level":"info","message":"Entry tidak ditemukan from ip address: 127.0.0.1","timestamp":"21:54:51 07-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan from ip address: 127.0.0.1","timestamp":"15:19:31 08-09-2023"}
+{"level":"info","message":"AuthAttemptFail from ip address: 127.0.0.1","timestamp":"09:35:25 09-09-2023"}
+{"level":"error","message":"Key: 'ValidationAccessInput.Username' Error:Field validation for 'Username' failed on the 'required' tag\nKey: 'ValidationAccessInput.NoCard' Error:Field validation for 'NoCard' failed on the 'required' tag\nKey: 'ValidationAccessInput.Token' Error:Field validation for 'Token' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"09:35:39 09-09-2023"}
+{"level":"error","message":"Key: 'ValidationAccessInput.Token' Error:Field validation for 'Token' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"09:44:52 09-09-2023"}
+{"level":"info","message":"AuthAttemptFail from ip address: 127.0.0.1","timestamp":"09:50:01 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"09:50:18 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:13:27 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:14:02 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:15:36 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:16:34 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:17:28 09-09-2023"}
+{"level":"error","message":"Key: 'ValidationAccessInput.Username' Error:Field validation for 'Username' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"10:17:42 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:17:47 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:22:44 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:22:54 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:23:03 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:23:39 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:24:00 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:25:19 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:26:42 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:26:48 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:27:37 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"20:39:22 09-09-2023"}
+{"level":"info","message":"Usermcu tidak ditemukan from ip address: 127.0.0.1","timestamp":"20:41:43 09-09-2023"}
+{"level":"error","message":"Key: 'ValidationAccessInput.Username' Error:Field validation for 'Username' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"22:07:55 09-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"19:28:05 11-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"10:40:29 12-09-2023"}
+{"level":"error","message":"Key: 'RegistryCardInput.DoorToken' Error:Field validation for 'DoorToken' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"16:46:55 12-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"16:47:09 12-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"16:47:40 12-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"16:48:54 12-09-2023"}
+{"level":"error","message":"Key: 'RegistryCardInput.NoCard' Error:Field validation for 'NoCard' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"16:50:27 12-09-2023"}
+{"level":"error","message":"Key: 'RegistryCardInput.NoCard' Error:Field validation for 'NoCard' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"16:50:48 12-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"16:50:59 12-09-2023"}
+{"level":"error","message":"Error 1054 (42S22): Unknown column 'state' in 'field list' from ip address: 127.0.0.1","timestamp":"16:54:15 12-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"16:56:25 12-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan from ip address: 127.0.0.1","timestamp":"11:18:08 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"11:18:57 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"11:19:33 16-09-2023"}
+{"level":"error","message":"Key: 'ValidationAccessInput.Token' Error:Field validation for 'Token' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"11:42:41 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"11:42:50 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"19:10:49 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"20:01:43 16-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan from ip address: 127.0.0.1","timestamp":"21:14:42 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:46:00 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:47:13 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:48:27 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:48:44 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:49:46 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:50:58 16-09-2023"}
+{"level":"error","message":"Key: 'RegistryAndValidationCardInput.NoCard' Error:Field validation for 'NoCard' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"23:51:48 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:51:52 16-09-2023"}
+{"level":"error","message":"Key: 'RegistryAndValidationCardInput.NoCard' Error:Field validation for 'NoCard' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"23:53:48 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:54:42 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:56:18 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"23:58:08 16-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"00:24:00 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"00:43:39 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"00:43:46 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"00:44:09 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"00:45:24 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"01:15:07 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"01:32:36 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"02:04:45 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"02:28:58 17-09-2023"}
+{"level":"error","message":"Key: 'ValidationAccessInput.Username' Error:Field validation for 'Username' failed on the 'required' tag from ip address: 127.0.0.1","timestamp":"03:39:39 17-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"03:54:25 17-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan from ip address: 127.0.0.1","timestamp":"15:50:51 18-09-2023"}
+{"level":"info","message":"Setting mcu ditemukan from ip address: 127.0.0.1","timestamp":"12:10:44 21-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"12:11:47 21-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"14:55:49 21-09-2023"}
+{"level":"error","message":"record not found from ip address: 127.0.0.1","timestamp":"14:57:32 21-09-2023"}
+{"level":"error","message":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gatewatch`.`tb_log`, CONSTRAINT `tb_log_FK` FOREIGN KEY (`tb_user_mcu_id`) REFERENCES `tb_user_mcu` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT) from ip address: 127.0.0.1","timestamp":"15:23:35 21-09-2023"}
+{"level":"error","message":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gatewatch`.`tb_log`, CONSTRAINT `tb_log_FK` FOREIGN KEY (`tb_user_mcu_id`) REFERENCES `tb_user_mcu` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT) from ip address: 127.0.0.1","timestamp":"15:25:05 21-09-2023"}
+{"level":"error","message":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gatewatch`.`tb_log`, CONSTRAINT `tb_log_FK` FOREIGN KEY (`tb_user_mcu_id`) REFERENCES `tb_user_mcu` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT) from ip address: 127.0.0.1","timestamp":"15:25:52 21-09-2023"}
+{"level":"error","message":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gatewatch`.`tb_log`, CONSTRAINT `tb_log_FK` FOREIGN KEY (`tb_user_mcu_id`) REFERENCES `tb_user_mcu` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT) from ip address: 127.0.0.1","timestamp":"15:29:06 21-09-2023"}
+{"level":"error","message":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gatewatch`.`tb_log`, CONSTRAINT `tb_log_FK` FOREIGN KEY (`tb_user_mcu_id`) REFERENCES `tb_user_mcu` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT) from ip address: 127.0.0.1","timestamp":"15:29:49 21-09-2023"}
+{"level":"error","message":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gatewatch`.`tb_log`, CONSTRAINT `tb_log_FK` FOREIGN KEY (`tb_user_mcu_id`) REFERENCES `tb_user_mcu` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT) from ip address: 127.0.0.1","timestamp":"15:54:49 21-09-2023"}
+{"level":"error","message":"Error 1146 (42S02): Table 'gatewatch.tb_cctvs' doesn't exist from ip address: 127.0.0.1","timestamp":"21:24:59 22-09-2023"}
+{"level":"error","message":"Get \"https:///--?\u0026ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\u0026auto=format\u0026fit=crop\u0026w=2070\u0026q=80\": http: no Host in request URL from ip address: 127.0.0.1","timestamp":"21:27:59 22-09-2023"}
+{"level":"error","message":"parse \"https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3\u0026ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\u0026auto=format\u0026fit=crop\u0026w=2070\u0026q=80\\n\": net/url: invalid control character in URL from ip address: 127.0.0.1","timestamp":"21:43:17 22-09-2023"}
+{"level":"error","message":"Get \"http://127.0.0.1:9000/gatewatch-app/?location=\": dial tcp 127.0.0.1:9000: connectex: No connection could be made because the target machine actively refused it. from ip address: 127.0.0.1","timestamp":"22:06:01 29-09-2023"}
+{"level":"error","message":"The Access Key Id you provided does not exist in our records. from ip address: 127.0.0.1","timestamp":"22:16:18 29-09-2023"}

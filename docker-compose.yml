@@ -1,0 +1,38 @@
+version: '3'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      - GIN_MODE=$GIN_MODE
+      - APP_PORT=$APP_PORT
+      - DB_1_HOST=$DB_HOST
+      - DB_1_PORT=$DB_PORT
+      - DB_1_USER=$DB_USER
+      - DB_1_PASS=$DB_PASS
+      - DB_1_NAME=$DB_NAME
+    depends_on:
+      - db
+    # env_file:
+    #   # inside folder config
+    #   - ./config/.env
+
+  db:
+    image: mysql:8.0
+    restart: always
+    ports:
+      - 3366:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=$DB_PASS
+      - MYSQL_DATABASE=$DB_NAME
+      - MYSQL_USER=$DB_USER
+      - MYSQL_PASSWORD=$DB_PASS
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
