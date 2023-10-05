@@ -40,10 +40,10 @@ type envConfigs struct {
 	MINIO_BUCKET     string `mapstructure:"MINIO_BUCKET"`
 
 	// rabbitmq
-	RMQ_HOST string `mapstructure:"RMQ_HOST"`
-	RMQ_PORT string `mapstructure:"RMQ_PORT"`
-	RMQ_USER string `mapstructure:"RMQ_USER"`
-	RMQ_PASS string `mapstructure:"RMQ_PASS"`
+	RABBIT_HOST string `mapstructure:"RABBIT_HOST"`
+	RABBIT_PORT string `mapstructure:"RABBIT_PORT"`
+	RABBIT_USER string `mapstructure:"RABBIT_USER"`
+	RABBIT_PASS string `mapstructure:"RABBIT_PASS"`
 }
 
 func load() (config *envConfigs) {

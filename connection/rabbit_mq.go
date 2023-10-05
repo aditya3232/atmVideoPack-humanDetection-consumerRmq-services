@@ -1,8 +1,9 @@
 package connection
 
 import (
-	"fmt"
+	"log"
 
+	"github.com/aditya3232/gatewatchApp-services.git/config"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
@@ -13,18 +14,17 @@ import (
 */
 
 func ConnectRabbitMQ() (*amqp.Connection, error) {
-	// conn, err := amqp.Dial(fmt.Sprintf("amqp://%s:%s@%s:%s/", config.CONFIG.RMQ_USER, config.CONFIG.RMQ_PASS, config.CONFIG.RMQ_HOST, config.CONFIG.RMQ_PORT))
-	conn, err := amqp.Dial("amqp://guest:guest@127.0.0.1:5672/")
+	conn, err := amqp.Dial("amqp://" + config.CONFIG.RABBIT_USER + ":" + config.CONFIG.RABBIT_PASS + "@" + config.CONFIG.RABBIT_HOST + ":" + config.CONFIG.RABBIT_PORT + "/")
 	if err != nil {
-		fmt.Println(err)
-		panic(err)
+		log.Fatalln(err)
+		return nil, err
 	}
 
-	fmt.Println("Successfully connected to our RabbitMQ instance")
+	log.Print("RabbitMQ is connected")
 
 	return conn, nil
 }
 
 func RabbitMQ() *amqp.Connection {
-	return database.rabbitmq
+	return connection.rabbitmq
 }

@@ -8,7 +8,7 @@ import (
 	"github.com/minio/minio-go/v7/pkg/credentials"
 )
 
-func ConnectMinioGatewatch() (*minio.Client, error) {
+func ConnectMinio() (*minio.Client, error) {
 	minioClient, err := minio.New(config.CONFIG.MINIO_HOST+":"+config.CONFIG.MINIO_PORT, &minio.Options{
 		Creds:  credentials.NewStaticV4(config.CONFIG.MINIO_ACCESS_KEY, config.CONFIG.MINIO_SECRET_KEY, ""),
 		Secure: false,
@@ -20,11 +20,10 @@ func ConnectMinioGatewatch() (*minio.Client, error) {
 	}
 
 	log.Print("Minio is connected")
-
 	return minioClient, nil
 
 }
 
-func MinioGatewatch() *minio.Client {
-	return database.minio
+func Minio() *minio.Client {
+	return connection.minio
 }

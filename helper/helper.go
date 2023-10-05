@@ -7,7 +7,6 @@ import (
 	"image"
 	"image/jpeg"
 	"io"
-	"io/ioutil"
 	"math/rand"
 	"mime/multipart"
 	"net/http"
@@ -391,7 +390,7 @@ func Base64ToImage(base64String string) (string, error) {
 	}
 
 	path := RandomStringWithLength(10) + "." + ext
-	err = ioutil.WriteFile(path, img, 0644)
+	err = os.WriteFile(path, img, 0644)
 	if err != nil {
 		return "", err
 	}
