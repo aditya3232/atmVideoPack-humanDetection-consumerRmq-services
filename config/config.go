@@ -48,7 +48,7 @@ type envConfigs struct {
 
 func load() (config *envConfigs) {
 	// Tell viper the path/location of your env file. If it is root just add "."
-	viper.AddConfigPath("../../atmVideoPack-publisherRmq-services/config")
+	viper.AddConfigPath("../../atmVideoPack-humanDetection-publisherRmq-services/config")
 
 	// Tell viper the name of your file
 	viper.SetConfigName(".env")
