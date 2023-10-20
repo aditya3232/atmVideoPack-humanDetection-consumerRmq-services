@@ -10,13 +10,13 @@ import (
 	"github.com/aditya3232/gatewatchApp-services.git/helper"
 	libraryMinio "github.com/aditya3232/gatewatchApp-services.git/library/minio"
 	"github.com/aditya3232/gatewatchApp-services.git/log"
+	"github.com/aditya3232/gatewatchApp-services.git/model/tb_human_detection"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"gorm.io/gorm"
 )
 
 type Repository interface {
-	ConsumerQueueHumanDetection() (HumanDetection, error)
-	Create(humanDetection HumanDetection) (HumanDetection, error)
+	ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, error)
 }
 
 type repository struct {
@@ -28,17 +28,18 @@ func NewRepository(db *gorm.DB, rabbitmq *amqp.Connection) *repository {
 	return &repository{db, rabbitmq}
 }
 
-func (r *repository) ConsumerQueueHumanDetection() (HumanDetection, error) {
+func (r *repository) ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, error) {
+	var rmqConsumerHumanDetection RmqConsumerHumanDetection
 
 	// create channel
-	channel, err := r.rabbitmq.Channel()
+	ch, err := r.rabbitmq.Channel()
 	if err != nil {
-		return HumanDetection{}, err
+		return rmqConsumerHumanDetection, err
 	}
-	defer channel.Close()
+	defer ch.Close()
 
 	// consume queue
-	msgs, err := channel.Consume(
+	msgs, err := ch.Consume(
 		"HumanDetectionQueue", // name queue
 		"",                    // Consumer name (empty for random name)
 		true,                  // Auto-acknowledgment (set to true for auto-ack)
@@ -49,21 +50,21 @@ func (r *repository) ConsumerQueueHumanDetection() (HumanDetection, error) {
 	)
 
 	if err != nil {
-		return HumanDetection{}, err
+		return rmqConsumerHumanDetection, err
 	}
 
 	// get message
 	for d := range msgs {
-		humanDetection := HumanDetection{}
-		err := json.Unmarshal(d.Body, &humanDetection)
+		newHumanDetection := rmqConsumerHumanDetection
+		err := json.Unmarshal(d.Body, &newHumanDetection)
 		if err != nil {
-			return HumanDetection{}, err
+			return rmqConsumerHumanDetection, err
 		}
 
 		// konversi humanDetection.FileNameCaptureHumanDetection string ke bytes
-		bytesConvertedFile, err := base64.StdEncoding.DecodeString(humanDetection.FileNameCaptureHumanDetection)
+		bytesConvertedFile, err := base64.StdEncoding.DecodeString(newHumanDetection.ConvertedFileCaptureHumanDetection)
 		if err != nil {
-			return HumanDetection{}, err
+			return rmqConsumerHumanDetection, err
 		}
 
 		// Mengunggah gambar ke MinIO
@@ -73,32 +74,25 @@ func (r *repository) ConsumerQueueHumanDetection() (HumanDetection, error) {
 		key, err := libraryMinio.UploadFileFromPutObject(config.CONFIG.MINIO_BUCKET, objectName, bytesConvertedFile)
 		if err != nil {
 			log.Error(fmt.Sprintf("Gambar gagal diunggah ke MinIO dengan nama objek: %s\n", key.Key))
-			return HumanDetection{}, err
+			return rmqConsumerHumanDetection, err
 		}
 
-		// insert Tid, DateTime, Person, File, ConvertedFile from message to db
-		_, err = r.Create(
-			HumanDetection{
-				Tid:                           humanDetection.Tid,
-				DateTime:                      humanDetection.DateTime,
-				Person:                        humanDetection.Person,
+		// create data tb_human_detection
+		repo := tb_human_detection.NewRepository(r.db)
+		_, err = repo.Create(
+			tb_human_detection.TbHumanDetection{
+				TidID:                         newHumanDetection.TidID,
+				DateTime:                      newHumanDetection.DateTime,
+				Person:                        newHumanDetection.Person,
 				FileNameCaptureHumanDetection: FileNameCaptureHumanDetection,
 			},
 		)
 		if err != nil {
-			return HumanDetection{}, err
+			return rmqConsumerHumanDetection, err
 		}
+
 	}
 
-	return HumanDetection{}, nil
+	return rmqConsumerHumanDetection, nil
 
-}
-
-func (r *repository) Create(humanDetection HumanDetection) (HumanDetection, error) {
-	err := r.db.Create(&humanDetection).Error
-	if err != nil {
-		return HumanDetection{}, err
-	}
-
-	return humanDetection, nil
 }

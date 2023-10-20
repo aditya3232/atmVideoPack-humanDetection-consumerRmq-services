@@ -1,11 +1,11 @@
 package consumer_human_detection
 
 type Service interface {
-	ConsumerQueueHumanDetection() (HumanDetection, error)
+	ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, error)
 }
 
 type service struct {
-	humanDetectionRepository Repository
+	statusMcDetectionRepository Repository
 }
 
 func NewService(repository Repository) *service {
@@ -13,14 +13,14 @@ func NewService(repository Repository) *service {
 }
 
 // consume and save to db
-func (s *service) ConsumerQueueHumanDetection() (HumanDetection, error) {
+func (s *service) ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, error) {
 
 	// consume queue
-	humanDetection, err := s.humanDetectionRepository.ConsumerQueueHumanDetection()
+	newRmqConsumerHumanDetection, err := s.statusMcDetectionRepository.ConsumerQueueHumanDetection()
 	if err != nil {
-		return HumanDetection{}, err
+		return newRmqConsumerHumanDetection, err
 	}
 
-	return humanDetection, nil
+	return newRmqConsumerHumanDetection, nil
 
 }

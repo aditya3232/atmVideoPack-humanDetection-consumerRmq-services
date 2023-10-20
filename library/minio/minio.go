@@ -23,7 +23,7 @@ func UploadFileFromPutObject(bucketName string, objectName string, imageBytes []
 	}
 
 	n, err := connection.Minio().PutObject(context.TODO(), bucketName, objectName, bytes.NewReader(imageBytes), int64(len(imageBytes)), minio.PutObjectOptions{
-		ContentType: "image/jpeg/jpg", // Sesuaikan tipe konten sesuai dengan gambar yang diunduh
+		ContentType: "application/octet-stream",
 	})
 
 	if err != nil {
