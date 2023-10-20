@@ -10,7 +10,9 @@ import (
 	"github.com/aditya3232/gatewatchApp-services.git/helper"
 	libraryMinio "github.com/aditya3232/gatewatchApp-services.git/library/minio"
 	"github.com/aditya3232/gatewatchApp-services.git/log"
+	"github.com/aditya3232/gatewatchApp-services.git/model/add_human_detection_to_elastic"
 	"github.com/aditya3232/gatewatchApp-services.git/model/tb_human_detection"
+	"github.com/elastic/go-elasticsearch"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"gorm.io/gorm"
 )
@@ -20,12 +22,13 @@ type Repository interface {
 }
 
 type repository struct {
-	db       *gorm.DB
-	rabbitmq *amqp.Connection
+	db            *gorm.DB
+	rabbitmq      *amqp.Connection
+	elasticsearch *elasticsearch.Client
 }
 
-func NewRepository(db *gorm.DB, rabbitmq *amqp.Connection) *repository {
-	return &repository{db, rabbitmq}
+func NewRepository(db *gorm.DB, rabbitmq *amqp.Connection, elasticsearch *elasticsearch.Client) *repository {
+	return &repository{db, rabbitmq, elasticsearch}
 }
 
 func (r *repository) ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, error) {
@@ -76,6 +79,23 @@ func (r *repository) ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, e
 			log.Error(fmt.Sprintf("Gambar gagal diunggah ke MinIO dengan nama objek: %s\n", key.Key))
 			return rmqConsumerHumanDetection, err
 		}
+
+		// add data newHumanDtection to elasticsearch with CreateElasticHumanDetection
+		repoElastic := add_human_detection_to_elastic.NewRepository(r.elasticsearch)
+		resultElastic, err := repoElastic.CreateElasticHumanDetection(
+			add_human_detection_to_elastic.ElasticHumanDetection{
+				ID:                            helper.DateTimeToStringWithStrip(time.Now()),
+				TidID:                         newHumanDetection.TidID,
+				DateTime:                      newHumanDetection.DateTime,
+				Person:                        newHumanDetection.Person,
+				FileNameCaptureHumanDetection: FileNameCaptureHumanDetection,
+			},
+		)
+		if err != nil {
+			return rmqConsumerHumanDetection, err
+		}
+		// log result elastic
+		log.Info(fmt.Sprintf("Result elastic: %v\n", resultElastic))
 
 		// create data tb_human_detection
 		repo := tb_human_detection.NewRepository(r.db)

@@ -48,17 +48,17 @@ func init() {
 		// if err != nil {
 		// 	panic(err)
 		// }
-		// es, err := ConnectElastic()
-		// if err != nil {
-		// 	panic(err)
-		// }
+		es, err := ConnectElastic()
+		if err != nil {
+			panic(err)
+		}
 
 		connection = Connection{
 			db:       db,
 			minio:    minio,
 			rabbitmq: rabbitmq,
 			// redis: redis,
-			// es: es,
+			es: es,
 		}
 	})
 }

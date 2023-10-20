@@ -79,7 +79,7 @@ func init() {
 // 	}
 
 // 	// Perform the request with the client
-// 	res, err := req.Do(context.Background(), connection.ElasticSearchGatewatch())
+// 	res, err := req.Do(context.Background(), connection.ElasticSearch())
 // 	if err != nil {
 // 		panic(err)
 // 	}
