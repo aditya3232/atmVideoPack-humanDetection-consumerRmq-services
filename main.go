@@ -15,6 +15,8 @@ func main() {
 
 	forever := make(chan bool)
 	go func() {
+		defer helper.RecoverPanic() // Menambahkan recover di dalam goroutine
+
 		consumerHumanDetectionRepository := consumer_human_detection.NewRepository(connection.DatabaseMysql(), connection.RabbitMQ())
 		consumerHumanDetectionService := consumer_human_detection.NewService(consumerHumanDetectionRepository)
 
