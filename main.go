@@ -36,4 +36,7 @@ func main() {
 
 	router.Run(fmt.Sprintf("%s:%s", config.CONFIG.APP_HOST, config.CONFIG.APP_PORT))
 
+	// Penutupan koneksi setelah aplikasi selesai berjalan
+	defer connection.Close()
+
 }
