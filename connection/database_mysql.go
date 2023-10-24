@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/aditya3232/gatewatchApp-services.git/config"
+	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

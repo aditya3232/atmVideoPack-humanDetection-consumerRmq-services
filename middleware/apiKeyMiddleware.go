@@ -3,8 +3,8 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/aditya3232/gatewatchApp-services.git/helper"
-	"github.com/aditya3232/gatewatchApp-services.git/log"
+	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/helper"
+	log_function "github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/log"
 	"github.com/gin-gonic/gin"
 )
 
@@ -24,7 +24,7 @@ func ApiKeyMiddleware(validAPIKey string) gin.HandlerFunc {
 			errorMessage := gin.H{"errors": errors}
 			response := helper.APIResponse("Unauthorized", http.StatusUnauthorized, errorMessage)
 			c.AbortWithStatusJSON(http.StatusUnauthorized, response)
-			log.Info("AuthAttemptFail", " from ip address: ", c.ClientIP())
+			log_function.Info("AuthAttemptFail", " from ip address: ", c.ClientIP())
 			return
 		}
 

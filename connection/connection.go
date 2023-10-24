@@ -1,10 +1,11 @@
 package connection
 
 import (
+	"fmt"
 	"sync"
 
-	"github.com/aditya3232/gatewatchApp-services.git/config"
-	"github.com/elastic/go-elasticsearch"
+	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/config"
+	esv7 "github.com/elastic/go-elasticsearch/v7"
 	"github.com/minio/minio-go/v7"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/redis/go-redis/v9"
@@ -14,7 +15,7 @@ import (
 type Connection struct {
 	db       *gorm.DB
 	redis    *redis.Client
-	es       *elasticsearch.Client
+	es       *esv7.Client
 	minio    *minio.Client
 	rabbitmq *amqp.Connection
 }
@@ -50,7 +51,8 @@ func init() {
 		// }
 		es, err := ConnectElastic()
 		if err != nil {
-			panic(err)
+			fmt.Println(err)
+			// panic(err)
 		}
 
 		connection = Connection{

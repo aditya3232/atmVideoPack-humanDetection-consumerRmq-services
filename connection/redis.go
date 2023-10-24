@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/aditya3232/gatewatchApp-services.git/config"
+	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/config"
 	"github.com/redis/go-redis/v9"
 )
 

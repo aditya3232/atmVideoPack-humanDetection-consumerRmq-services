@@ -7,7 +7,6 @@ import (
 	"image"
 	"image/jpeg"
 	"io"
-	"io/ioutil"
 	"math/rand"
 	"mime/multipart"
 	"net/http"
@@ -17,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aditya3232/gatewatchApp-services.git/log"
+	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/log"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"gorm.io/gorm"
@@ -391,7 +390,7 @@ func Base64ToImage(base64String string) (string, error) {
 	}
 
 	path := RandomStringWithLength(10) + "." + ext
-	err = ioutil.WriteFile(path, img, 0644)
+	err = os.WriteFile(path, img, 0644)
 	if err != nil {
 		return "", err
 	}
@@ -415,6 +414,26 @@ func RemoveFile(file string) {
 }
 
 // ==================================================file upload==================================================
+
+func CompressImageBytes(imageBytes []byte) ([]byte, error) {
+	// decode image from bytes
+	img, _, err := image.Decode(bytes.NewReader(imageBytes))
+	if err != nil {
+		return nil, err
+	}
+
+	// create buffer
+	buf := new(bytes.Buffer)
+
+	// encode image to buffer
+	err = jpeg.Encode(buf, img, &jpeg.Options{Quality: 50})
+	if err != nil {
+		return nil, err
+	}
+
+	// return buffer as bytes
+	return buf.Bytes(), nil
+}
 
 // is image helper
 func IsImage(file *multipart.FileHeader) error {
@@ -460,26 +479,6 @@ func ConvertImageToJpg(file *multipart.FileHeader) error {
 
 	// return buffer as bytes
 	return nil
-}
-
-func CompressImageBytes(imageBytes []byte) ([]byte, error) {
-	// decode image from bytes
-	img, _, err := image.Decode(bytes.NewReader(imageBytes))
-	if err != nil {
-		return nil, err
-	}
-
-	// create buffer
-	buf := new(bytes.Buffer)
-
-	// encode image to buffer
-	err = jpeg.Encode(buf, img, &jpeg.Options{Quality: 50})
-	if err != nil {
-		return nil, err
-	}
-
-	// return buffer as bytes
-	return buf.Bytes(), nil
 }
 
 // convert file from multipart form data to base64, and compress to

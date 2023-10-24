@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/elastic/go-elasticsearch"
+	esv7 "github.com/elastic/go-elasticsearch/v7"
 )
 
 type Repository interface {
@@ -12,10 +12,10 @@ type Repository interface {
 }
 
 type repository struct {
-	elasticsearch *elasticsearch.Client
+	elasticsearch *esv7.Client
 }
 
-func NewRepository(elasticsearch *elasticsearch.Client) *repository {
+func NewRepository(elasticsearch *esv7.Client) *repository {
 	return &repository{elasticsearch}
 }
 

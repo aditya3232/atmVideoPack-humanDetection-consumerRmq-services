@@ -3,7 +3,7 @@ package connection
 import (
 	"log"
 
-	"github.com/aditya3232/gatewatchApp-services.git/config"
+	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/config"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
