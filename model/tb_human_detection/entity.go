@@ -12,7 +12,7 @@ type TbHumanDetection struct {
 	UpdatedAt                     time.Time `gorm:"column:updated_at;default:now()" json:"updated_at"`
 	TidID                         *int      `json:"tid_id"`
 	DateTime                      string    `json:"date_time"`
-	Person                        string    `json:"Person"`
+	Person                        string    `json:"person"`
 	FileNameCaptureHumanDetection string    `json:"file_name_capture_human_detection"`
 }
 
