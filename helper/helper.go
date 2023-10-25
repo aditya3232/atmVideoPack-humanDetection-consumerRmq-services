@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/log"
+	log_function "github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/log"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"gorm.io/gorm"
@@ -409,7 +409,7 @@ func GetMimeType(file string) string {
 func RemoveFile(file string) {
 	err := os.Remove(file)
 	if err != nil {
-		log.Error(err)
+		log_function.Error(err)
 	}
 }
 
