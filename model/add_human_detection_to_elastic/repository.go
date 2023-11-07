@@ -1,7 +1,6 @@
 package add_human_detection_to_elastic
 
 import (
-	"strconv"
 	"strings"
 
 	esv7 "github.com/elastic/go-elasticsearch/v7"
@@ -29,7 +28,7 @@ func (r *repository) CreateElasticHumanDetection(elasticHumanDetection ElasticHu
 	// Misalnya, jika Anda ingin menyimpan data deteksi manusia yang diberikan sebagai JSON:
 	body := []byte(`{
 		"id": "` + elasticHumanDetection.ID + `",
-		"tid_id": "` + strconv.Itoa(*elasticHumanDetection.TidID) + `",
+		"tid": "` + elasticHumanDetection.Tid + `",
 		"date_time": "` + elasticHumanDetection.DateTime + `",
 		"person": "` + elasticHumanDetection.Person + `",
 		"file_name_capture_human_detection": "` + elasticHumanDetection.FileNameCaptureHumanDetection + `"

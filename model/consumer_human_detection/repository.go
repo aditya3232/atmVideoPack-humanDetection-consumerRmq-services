@@ -84,7 +84,7 @@ func (r *repository) ConsumerQueueHumanDetection() (RmqConsumerHumanDetection, e
 		resultElastic, err := repoElastic.CreateElasticHumanDetection(
 			add_human_detection_to_elastic.ElasticHumanDetection{
 				ID:                            helper.DateTimeToStringWithStrip(time.Now()),
-				TidID:                         newHumanDetection.TidID,
+				Tid:                           newHumanDetection.Tid,
 				DateTime:                      newHumanDetection.DateTime,
 				Person:                        newHumanDetection.Person,
 				FileNameCaptureHumanDetection: FileNameCaptureHumanDetection,

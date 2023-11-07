@@ -40,7 +40,7 @@ func (r *repository) DelOneMonthOldLogs() error {
 			"query": map[string]interface{}{
 				"range": map[string]interface{}{
 					"timestamp": map[string]interface{}{
-						"lte": oneMonthAgoStr,
+						"gt": oneMonthAgoStr,
 					},
 				},
 			},
