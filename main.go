@@ -5,7 +5,8 @@ import (
 
 	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/config"
 	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/connection"
-	_ "github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/cron"
+
+	// _ "github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/cron"
 	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/helper"
 	"github.com/aditya3232/atmVideoPack-humanDetection-consumerRmq-services.git/model/consumer_human_detection"
 	"github.com/gin-gonic/gin"
