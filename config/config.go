@@ -26,6 +26,8 @@ type envConfigs struct {
 	// elasticsearch
 	ES_HOST string `mapstructure:"ES_HOST"`
 	ES_PORT string `mapstructure:"ES_PORT"`
+	ES_USER string `mapstructure:"ES_USER"`
+	ES_PASS string `mapstructure:"ES_PASS"`
 
 	// redis
 	REDIS_HOST string `mapstructure:"REDIS_HOST"`

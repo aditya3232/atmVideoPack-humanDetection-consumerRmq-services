@@ -15,6 +15,8 @@ func ConnectElastic() (*esv7.Client, error) {
 			Addresses: []string{
 				"http://" + config.CONFIG.ES_HOST + ":" + config.CONFIG.ES_PORT,
 			},
+			Username: config.CONFIG.ES_USER, // Replace with your Elasticsearch username
+			Password: config.CONFIG.ES_PASS, // Replace with your Elasticsearch password
 		},
 	)
 	if err != nil {
